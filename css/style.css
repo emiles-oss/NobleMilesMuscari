@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol,li{
+    list-style-type: none;
+}
+
+.login a{
+    text-decoration: none;
+    color: black;
+}
+.home{
+background-color: black;
+color: black;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.homeheader{
+    background-color: black;
+}
+
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.destacados{
+    background-color: antiquewhite;
+    margin: 100px;
+}
+
+.contacto{
+    background-color: antiquewhite; 
+    margin: 100px; 
+}
