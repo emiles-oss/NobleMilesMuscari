@@ -24,6 +24,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 .logo img{
     width: 150px;
     height: 150px;
+    
 }
 .logo{
     display: flex;
