@@ -8,31 +8,36 @@ ul,ol,li{
     list-style-type: none;
 }
 
-.login a{
+a{
     text-decoration: none;
     color: black;
 }
 .home{
-background-color: black;
+background-color: white;
 color: black;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .homeheader{
-    background-color: black;
+    background-color: white
 }
 
 .logo img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    margin: 10px 30px;
 }
 .logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu{
     display: flex;
     justify-content: center;
 }
 
 .destacados{
-    background-color: antiquewhite;
-    margin: 100px;
+    background-color: lightblue ;
 }
 
 .contacto{
