@@ -23,22 +23,34 @@ a {
 
 .homeheader {
     background-color: white;
+    border-bottom: 5px black solid;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 15px 30px;
 }
 
 .logo img {
-    width: 150px;
-    height: 150px;
+    height: 100px;
+    width: 100px;
+    display: block;
 }
 
-.logo {
+.menu{
     display: flex;
-    justify-content: flex-start;
-}
-
-.menu {
-    display: flex;
+    flex: 1;
     justify-content: center;
+    gap: 50px;
 }
+
+.menu a {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
 
 .destacados {
     background-color: lightblue;
