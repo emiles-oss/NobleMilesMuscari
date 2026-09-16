@@ -1,46 +1,50 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-ul,ol,li{
+ul,
+ol,
+li {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
-.home{
-background-color: white;
-color: black;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.homeheader{
-    background-color: white
+
+.home {
+    background-color: white;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.logo img{
-    width: 100px;
-    height: 100px;
-    margin: 10px 30px;
+.homeheader {
+    background-color: white;
 }
-.logo{
+
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.logo {
     display: flex;
     justify-content: flex-start;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
 }
 
-.destacados{
-    background-color: lightblue ;
+.destacados {
+    background-color: lightblue;
 }
 
-.contacto{
-    background-color: antiquewhite; 
-    margin: 100px; 
+.contacto {
+    background-color: antiquewhite;
+    margin: 100px;
 }
