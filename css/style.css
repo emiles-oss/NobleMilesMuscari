@@ -49,14 +49,47 @@ a {
     font-weight: 500;
 }
 
-
-
-
 .destacados {
+    display: flex;
     background-color: lightblue;
+    flex-direction:row;
+    height: 500px;
+    justify-content: space-around;
+    font-family: "Cormorant Garamond", serif;
+    
+}
+.foto {
+    display: flex;
+    align-items: center;
+    margin: 13px;
+    width: 250px;
+    height: 125px;
+
 }
 
 .contacto {
     background-color: antiquewhite;
     margin: 100px;
+}
+
+.textofoto{
+    font-size: 15px;
+    text-align: justify;
+    padding: 5px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+}
+.ferrari{
+    border: solid 2px;
+    display: flex;
+    margin: 5px;
+}
+.lamborghini {
+    border: solid 2px;
+    margin: 5px;
+    
+}
+.porsche {
+    border: solid 2px;
+    margin: 5px;
 }
