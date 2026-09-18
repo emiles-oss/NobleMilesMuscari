@@ -49,11 +49,20 @@ a {
     font-weight: 500;
 }
 
+.imagen{
+    background-image: url(../imagenes/ChatGPT\ Image\ 18\ sept\ 2026\,\ 08_05_53\ a.m..png);
+    height: 500px;
+}
+
+.texto-imagen{
+    color: white;
+    margin: 100px;
+}
 
 
 
 .destacados {
-    background-color: lightblue;
+    background-color: white;
 }
 
 .contacto {
