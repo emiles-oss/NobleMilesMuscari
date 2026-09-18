@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-      <header class="homeheader">
+     <header class="homeheader">
         <div class="logo">
             <a href="./index.html" class="logo link">
                 <img src="./imagenes/logoconnombre.png" alt="logo">
@@ -18,9 +18,12 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./login.html">Ingresar</a></li>
                 <li><a href="./register.html">Registrarme</a></li>
-                <li><a href="./search-results.html">Buscar</a></li>
             </ul>
         </nav>
+        <form class="buscador" action="./search-results.html" method="get">
+            <input class="input-buscador" type="text" name="buscador" placeholder="Buscar productos..."required>
+            <button type="submit">Buscar</button>
+        </form>
     </header>
 </body>
 </html>
