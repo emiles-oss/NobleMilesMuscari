@@ -15,12 +15,13 @@ a {
     color: black;
 }
 
-.home {
+body {
     background-color: white;
     color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header {
+.header {
     background-color: white;
     border-bottom: 5px black solid;
     display: flex;
@@ -56,23 +57,70 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo-nuevos{
+    padding: 100px 60px 15px;
+    font-size: 35px; 
 }
 
 .producto{
     margin: 0 10px 0 10px;
-    background-color: rgb(187, 187, 203);
+    background-color: rgb(215, 215, 215);
     border-radius: 20px;
+    width: 430px;
     padding: 15px;
 }
 
-.producto img{
-    width: 350px;
-    max-height: 500px;
+.foto{
+    width: 400px;
+}
+
+h3{
+   margin: 10px 0;
+}
+
+.precio{
+    font-weight: bold;
+}
+
+.ver {
+    background-color: #444;
+    padding: 10px;
+    width: 75px;
+    margin: 15px 0px;
+}
+
+.ver a{
+    text-decoration: none;
+    color: white;
+}
+
+.productos-destacados{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(215, 215, 215);
+}
+
+.titulo-destacados{
+    background-color: rgb(215, 215, 215);
+    padding: 100px 60px 15px;
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.destacado{
+    margin: 30px 10px 15px 10px;
+    background-color: white;
+    border-radius: 20px;
+    width: 430px;
+    padding: 15px;
 }
 
 footer{
     background-color: black;
+    padding: 50px 100px 100px;
 }
 
 .logo-sinnombre{
@@ -82,7 +130,6 @@ footer{
 
 .logo-sinnombre img {
     height: 200px;
-    margin-top: 50px;
 }
 
 .nombres{
@@ -92,7 +139,29 @@ footer{
 
 .nombre-particular{
     color: lightgrey;
-    margin-bottom: 100px;
     font-weight: 1000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    margin: 150px;
+    font-size: 18px;
+}
+
+.email{
+    margin: 0 0 20px ;
+}
+
+.ingresar{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.cuenta{
+    border: black 1px solid;
+    padding: 2px;
+    border-radius: 4px;
+    background-color: rgb(231, 230, 230);
 }
