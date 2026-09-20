@@ -8,22 +8,31 @@
 </head>
 <body>
     <header class="homeheader">
-        <div class="logo">
+        <div class="logo_buscador">
             <a href="./index.html" class="logo link">
                 <img src="./imagenes/logoconnombre.png" alt="logo">
             </a>
-        </div>
-        <nav class="menu">
-            <ul class="menu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./login.html">Ingresar</a></li>
-                <li><a href="./register.html">Registrarme</a></li>
-            </ul>
-        </nav>
-        <form class="buscador" action="./search-results.html" method="get">
-            <input class="input-buscador" type="text" name="buscador" placeholder="Buscar productos..."required>
+        <form  class="buscador" action="./search-results.html" method="get">
+            <input class="input-buscador" type="text" name="buscador" placeholder="Buscar productos..." required>
             <button type="submit">Buscar</button>
         </form>
-    </header> 
+        </div>
+        <div class="login-registro">
+            <a href="./login.html" class="login">Login</a>
+            <span class="login">|</span>
+            <a href="./register.html" class="registro">Registro</a>
+        </div>
+    </header>
+
+    <footer>
+        <div class="logo-sinnombre"><img src="./imagenes/logo.png" alt="logo"></div>
+        <nav>
+            <ul class="nombres">
+                <li class="nombre-particular">Enrique Miles</li>
+                <li class="nombre-particular">Juan Bautista Noble</li>
+                <li class="nombre-particular">Rafael Muscari</li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

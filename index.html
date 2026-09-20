@@ -8,161 +8,239 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="home">
     <header class="homeheader">
-        <div class="logo">
+        <div class="logo_buscador">
             <a href="./index.html" class="logo link">
                 <img src="./imagenes/logoconnombre.png" alt="logo">
             </a>
-        </div>
-        <nav class="menu">
-            <ul class="menu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./login.html">Ingresar</a></li>
-                <li><a href="./register.html">Registrarme</a></li>
-            </ul>
-        </nav>
-        <form class="buscador" action="./search-results.html" method="get">
-            <input class="input-buscador" type="text" name="buscador" placeholder="Buscar productos..."required>
+        <form  class="buscador" action="./search-results.html" method="get">
+            <input class="input-buscador" type="text" name="buscador" placeholder="Buscar productos..." required>
             <button type="submit">Buscar</button>
         </form>
+        </div>
+        <div class="login-registro">
+            <a href="./login.html" class="login">Login</a>
+            <span class="login">|</span>
+            <a href="./register.html" class="registro">Registro</a>
+        </div>
     </header>
-<main>
-    <section class="foto-auto">
-                <img src="./imagenes/ChatGPT Image 18 sept 2026, 08_05_53 a.m..png" alt="foto-auto">
-    </section>
-    <section>
-        <h2>Productos</h2>
-        <article class="ferrari">
-                    <img class="foto" src="./imagenes/ferrarifs90.webp" alt="ferrari">
-                    <div>
-                        <h3>Ferrari Fs90</h3>
-                        <p>Potencia híbrida, tecnología y exclusividad. La Ferrari SF90 combina un motor V8 con tecnología híbrida para ofrecer prestaciones extraordinarias y una experiencia de conducción única. Un superdeportivo diseñado para quienes buscan el maximo rendimiento sin renunciar al lujo italiano.</p>
-                        <p class="ver"><a href="./product.html">Ver Más</a></p>
-                    </div>
-        </article>
-        <article class="lamborghini">
-                    <img class="foto" src="./imagenes/images.jpg" alt="lamborghini">
-                    <div>
-                        <h3>Lamborghini Aventador</h3>
-                        <p>Diseñado para llamar la atención. El Lamborghini Aventador representa la esencia más extrema de la marca: Motor V12, diseño agresivo y prestaciones impresionantes. Una experiencia de conducción pensada para quienes buscan exclusividad y emociones al máximo.</p>
-                        <p class="ver"><a href="./product.html">Ver Más</a></p>
-                    </div>
-        </article>
-        <article class="porsche">   
-            <img class="foto" src="./imagenes/porsche911.webp" alt="foto-porsche911">
-            <div>
-                <h3>Porsche 911</h3>
-                <p>Un ícono que nunca pasa de moda. El Porsche 911 combina diseño atemporal, precisión alemana y un rendimiento excepcional. Su equilibrio entre deportividad y confort lo convierte en uno de los deportivos más reconocidos del mundo.</p>
-                <p class="ver"><a href="./product.html">Ver Más</a></p>
+    <main>
+        <section class="foto-auto">
+            <img src="./imagenes/ChatGPT Image 18 sept 2026, 08_05_53 a.m..png" alt="foto-auto">
+        </section>
+        <section>
+            <h1>Nuevos Productos</h1>
+            <div class="nuevos-productos">
+            <article class="producto">
+                <img class="foto" src="./imagenes/26_FRD_MST_RTR_LAUNCH_VHP-Accordion3_v1.avif" alt="mustang">
+                    <h3>2026 Ford Mustang</h3>
+                    <p>Auto deportivo icónico de séptima generación que combina un diseño agresivo de muscle car con tecnología moderna y opciones de motor de alta potencia.</p>
+                    <p>Precio: US$98 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+            </article>
+            <article class="producto">
+                <img class="foto" src="./imagenes/images.jpg" alt="lamborghini">
+                    <h3>Lamborghini Aventador</h3>
+                    <p>Diseñado para llamar la atención. El Lamborghini Aventador representa la esencia más extrema de
+                        la marca: Motor V12, diseño agresivo y prestaciones impresionantes.</p>
+                    <p>Precio: US$125 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+            </article>
+            <article class="producto">
+                <img class="foto" src="./imagenes/D_NQ_NP_2X_749563-MLA111535117367_052026-F.webp" alt="foto-BMW">
+                    <h3>BMW Serie</h3>
+                    <p>Una berlina de lujo de tamaño medio que mide más de cinco metros de largo y equilibra a la perfección la deportividad y el confort.</p>
+                    <p>Precio: US$78 500</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+            </article>
             </div>
-        </article>
-        <article class="ferrari">
-                    <img class="foto" src="./imagenes/ferrarifs90.webp" alt="ferrari">
-                    <div>
-                        <h3>Ferrari Fs90</h3>
-                        <p>Potencia híbrida, tecnología y exclusividad. La Ferrari SF90 combina un motor V8 con tecnología híbrida para ofrecer prestaciones extraordinarias y una experiencia de conducción única. Un superdeportivo diseñado para quienes buscan el maximo rendimiento sin renunciar al lujo italiano.</p>
-                        <p class="ver"><a href="./product.html">Ver Más</a></p>
-                    </div>
-        </article>
-        <article class="lamborghini">
-                    <img class="foto" src="./imagenes/images.jpg" alt="lamborghini">
-                    <div>
-                        <h3>Lamborghini Aventador</h3>
-                        <p>Diseñado para llamar la atención. El Lamborghini Aventador representa la esencia más extrema de la marca: Motor V12, diseño agresivo y prestaciones impresionantes. Una experiencia de conducción pensada para quienes buscan exclusividad y emociones al máximo.</p>
-                        <p class="ver"><a href="./product.html">Ver Más</a></p>
-                    </div>
-        </article>
-        <article class="porsche">   
-            <img class="foto" src="./imagenes/porsche911.webp" alt="foto-porsche911">
-            <div>
-                <h3>Porsche 911</h3>
-                <p>Un ícono que nunca pasa de moda. El Porsche 911 combina diseño atemporal, precisión alemana y un rendimiento excepcional. Su equilibrio entre deportividad y confort lo convierte en uno de los deportivos más reconocidos del mundo.</p>
-                <p class="ver"><a href="./product.html">Ver Más</a></p>
-            </div>
-        </article>
-        <article class="ferrari">
-                    <img class="foto" src="./imagenes/ferrarifs90.webp" alt="ferrari">
-                    <div>
-                        <h3>Ferrari Fs90</h3>
-                        <p>Potencia híbrida, tecnología y exclusividad. La Ferrari SF90 combina un motor V8 con tecnología híbrida para ofrecer prestaciones extraordinarias y una experiencia de conducción única. Un superdeportivo diseñado para quienes buscan el maximo rendimiento sin renunciar al lujo italiano.</p>
-                        <p class="ver"><a href="./product.html">Ver Más</a></p>
-                    </div>
-        </article>
-        <article class="lamborghini">
-                    <img class="foto" src="./imagenes/images.jpg" alt="lamborghini">
-                    <div>
-                        <h3>Lamborghini Aventador</h3>
-                        <p>Diseñado para llamar la atención. El Lamborghini Aventador representa la esencia más extrema de la marca: Motor V12, diseño agresivo y prestaciones impresionantes. Una experiencia de conducción pensada para quienes buscan exclusividad y emociones al máximo.</p>
-                        <p class="ver"><a href="./product.html">Ver Más</a></p>
-                    </div>
-        </article>
-        <article class="porsche">   
-            <img class="foto" src="./imagenes/porsche911.webp" alt="foto-porsche911">
-            <div>
-                <h3>Porsche 911</h3>
-                <p>Un ícono que nunca pasa de moda. El Porsche 911 combina diseño atemporal, precisión alemana y un rendimiento excepcional. Su equilibrio entre deportividad y confort lo convierte en uno de los deportivos más reconocidos del mundo.</p>
-                <p class="ver"><a href="./product.html">Ver Más</a></p>
-            </div>
-        </article>
-        <article class="ferrari">
-                    <img class="foto" src="./imagenes/ferrarifs90.webp" alt="ferrari">
-                    <div>
-                        <h3>Ferrari Fs90</h3>
-                        <p>Potencia híbrida, tecnología y exclusividad. La Ferrari SF90 combina un motor V8 con tecnología híbrida para ofrecer prestaciones extraordinarias y una experiencia de conducción única. Un superdeportivo diseñado para quienes buscan el maximo rendimiento sin renunciar al lujo italiano.</p>
-                        <p class="ver"><a href="./product.html">Ver Más</a></p>
-                    </div>
-        </article>
-    </section>
-    
-    <section class="destacados">
-        <h2>Productos Destacados</h2>
-        <article class="ferrari">
-                    <img class="foto" src="./imagenes/ferrarifs90.webp" alt="ferrari">
-                    <div>
-                        <h3>Ferrari Fs90</h3>
-                        <p>Potencia híbrida, tecnología y exclusividad. La Ferrari SF90 combina un motor V8 con tecnología híbrida para ofrecer prestaciones extraordinarias y una experiencia de conducción única. Un superdeportivo diseñado para quienes buscan el maximo rendimiento sin renunciar al lujo italiano.</p>
-                        <p class="ver"><a href="./product.html">Ver Más</a></p>
-                    </div>
-        </article>
-        <article class="lamborghini">
-                    <img class="foto" src="./imagenes/images.jpg" alt="lamborghini">
-                    <div>
-                        <h3>Lamborghini Aventador</h3>
-                        <p>Diseñado para llamar la atención. El Lamborghini Aventador representa la esencia más extrema de la marca: Motor V12, diseño agresivo y prestaciones impresionantes. Una experiencia de conducción pensada para quienes buscan exclusividad y emociones al máximo.</p>
-                        <p class="ver"><a href="./product.html">Ver Más</a></p>
-                    </div>
-        </article>
-        <article class="porsche">   
-            <img class="foto" src="./imagenes/porsche911.webp" alt="foto-porsche911">
-            <div>
-                <h3>Porsche 911</h3>
-                <p>Un ícono que nunca pasa de moda. El Porsche 911 combina diseño atemporal, precisión alemana y un rendimiento excepcional. Su equilibrio entre deportividad y confort lo convierte en uno de los deportivos más reconocidos del mundo.</p>
-                <p class="ver"><a href="./product.html">Ver Más</a></p>
-            </div>
-        </article>
-    </section>
-</main>
+        </section>
+        <section class="nuevos-productos">
+            <article class="producto">
+                <img class="foto" src="./imagenes/porsche911.webp" alt="foto-porsche911">
+                <div>
+                    <h3>Porsche 911</h3>
+                    <p>Un ícono que nunca pasa de moda. El Porsche 911 combina diseño atemporal, precisión alemana y un
+                        rendimiento excepcional. Su equilibrio entre deportividad y confort lo convierte en uno de los
+                        deportivos más reconocidos del mundo.</p>
+                    <p>Precio: US$300 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+                </div>
+            </article>
+            <article class="producto">
+                <img class="foto" src="./imagenes/6389578a-0f70-4051-b32a-111d0149a776.avif" alt="Mclaren">
+                <div>
+                    <h3>Mclaren W1</h3>
+                    <p>Hipercoche híbrido de producción limitada presentado en octubre de 2024.</p>
+                    <p>Precio: US$1 100 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+                </div>
+            </article>
+            <article class="producto">
+                <img class="foto" src="./imagenes/mazda-mx.avif" alt="mazda">
+                <div>
+                    <h3>Mazda MX-5 Miata</h3>
+                    <p>es un icónico automóvil deportivo tipo roadster biplaza de tracción trasera, famoso por su ligereza, bajo costo y extrema diversión al conducir.</p>
+                    <p>Precio: US$156 900</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+                </div>
+            </article>
+            <article class="producto">
+                <img class="foto" src="./imagenes/mercedes.jpg" alt="foto-mercedes">
+                <div>
+                    <h3>Mercedes-AMG A 45 S</h3>
+                    <p>Considerado históricamente uno de los hot-hatches más radicales y potentes del mundo gracias a su impresionante nivel de ingeniería.</p>
+                    <p>Precio: US$150 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+                </div>
+            </article>
+        </section>
+        <section class="nuevos-productos">
+                        <article class="producto">
+                <img class="foto" src="./imagenes/ferrarifs90.webp" alt="ferrari">
+                    <h3>Ferrari Fs90</h3>
+                    <p>Potencia híbrida, tecnología y exclusividad. La Ferrari SF90 combina un motor V8 con tecnología
+                        híbrida para ofrecer prestaciones extraordinarias y una experiencia de conducción única. Un
+                        superdeportivo diseñado para quienes buscan el maximo rendimiento sin renunciar al lujo
+                        italiano.</p>
+                    <p>Precio: US$150 300</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+            </article>
+            <article class="producto">
+                <img class="foto" src="./imagenes/D_NQ_NP_2X_921612-MLA115686466792_092026-F.webp" alt="Audi">
+                <div>
+                    <h3>Audi Rs 5 Sedán</h3>
+                    <p>Primer modelo de altas prestaciones de Audi Sport en incorporar tecnología híbrida enchufable.</p>
+                    <p>Precio: US$162 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+                </div>
+            </article>
+            <article class="producto">
+                <img class="foto" src="./imagenes/bugatti-chiron-1500.jpg" alt="ferrari">
+                <div>
+                    <h3>Buggatti Chiron</h3>
+                    <p>Hiperdeportivo biplaza de dos puertas con motor central-trasero y tracción integral, presentado en 2016 como el sucesor del legendario Bugatti Veyron.</p>
+                    <p>Precio: US$1 400 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+                </div>
+            </article>
+        </section>
 
-<footer>
-<article>
-<h3>Enrique Miles</h3>
-<p></p>
-</article>
+        <section class="destacados">
+            <h2>Productos Destacados</h2>
+            <article class="producto-destacado">
+                <img class="foto" src="./imagenes/ferrarifs90.webp" alt="ferrari">
+                    <h3>Ferrari Fs90</h3>
+                    <p>Potencia híbrida, tecnología y exclusividad. La Ferrari SF90 combina un motor V8 con tecnología
+                        híbrida para ofrecer prestaciones extraordinarias y una experiencia de conducción única. Un
+                        superdeportivo diseñado para quienes buscan el maximo rendimiento sin renunciar al lujo
+                        italiano.</p>
+                    <p>Precio: US$150 300</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+            </article>
+            <article class="producto-destacado">
+                <img class="foto" src="./imagenes/images.jpg" alt="lamborghini">
+                    <h3>Lamborghini Aventador</h3>
+                    <p>Diseñado para llamar la atención. El Lamborghini Aventador representa la esencia más extrema de
+                        la marca: Motor V12, diseño agresivo y prestaciones impresionantes. Una experiencia de
+                        conducción pensada para quienes buscan exclusividad y emociones al máximo.</p>
+                    <p>Precio: US$125 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+            </article>
+            <article class="producto-destacado">
+                <img class="foto" src="./imagenes/porsche911.webp" alt="foto-porsche911">
+                    <h3>Porsche 911</h3>
+                    <p>Un ícono que nunca pasa de moda. El Porsche 911 combina diseño atemporal, precisión alemana y un
+                        rendimiento excepcional. Su equilibrio entre deportividad y confort lo convierte en uno de los
+                        deportivos más reconocidos del mundo.</p>
+                    <p>Precio: US$300 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+            </article>
+            <article class="producto-destacado">
+                <img class="foto" src="./imagenes/porsche911.webp" alt="foto-porsche911">
+                    <h3>Porsche 911</h3>
+                    <p>Un ícono que nunca pasa de moda. El Porsche 911 combina diseño atemporal, precisión alemana y un
+                        rendimiento excepcional. Su equilibrio entre deportividad y confort lo convierte en uno de los
+                        deportivos más reconocidos del mundo.</p>
+                    <p>Precio: US$300 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+            </article>
+            <article class="producto-destacado">
+                <img class="foto" src="./imagenes/porsche911.webp" alt="foto-porsche911">
+                    <h3>Porsche 911</h3>
+                    <p>Un ícono que nunca pasa de moda. El Porsche 911 combina diseño atemporal, precisión alemana y un
+                        rendimiento excepcional. Su equilibrio entre deportividad y confort lo convierte en uno de los
+                        deportivos más reconocidos del mundo.</p>
+                    <p>Precio: US$300 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+            </article>
+        </section>
+         <section class="destacados">
+            <article class="producto-destacado">
+                <img class="foto" src="./imagenes/ferrarifs90.webp" alt="ferrari">
+                    <h3>Ferrari Fs90</h3>
+                    <p>Potencia híbrida, tecnología y exclusividad. La Ferrari SF90 combina un motor V8 con tecnología
+                        híbrida para ofrecer prestaciones extraordinarias y una experiencia de conducción única. Un
+                        superdeportivo diseñado para quienes buscan el maximo rendimiento sin renunciar al lujo
+                        italiano.</p>
+                    <p>Precio: US$150 300</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+            </article>
+            <article class="producto-destacado">
+                <img class="foto" src="./imagenes/images.jpg" alt="lamborghini">
+                    <h3>Lamborghini Aventador</h3>
+                    <p>Diseñado para llamar la atención. El Lamborghini Aventador representa la esencia más extrema de
+                        la marca: Motor V12, diseño agresivo y prestaciones impresionantes. Una experiencia de
+                        conducción pensada para quienes buscan exclusividad y emociones al máximo.</p>
+                    <p>Precio: US$125 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+            </article>
+            <article class="producto-destacado">
+                <img class="foto" src="./imagenes/porsche911.webp" alt="foto-porsche911">
+                    <h3>Porsche 911</h3>
+                    <p>Un ícono que nunca pasa de moda. El Porsche 911 combina diseño atemporal, precisión alemana y un
+                        rendimiento excepcional. Su equilibrio entre deportividad y confort lo convierte en uno de los
+                        deportivos más reconocidos del mundo.</p>
+                    <p>Precio: US$300 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+            </article>
+            <article class="producto-destacado">
+                <img class="foto" src="./imagenes/porsche911.webp" alt="foto-porsche911">
+                    <h3>Porsche 911</h3>
+                    <p>Un ícono que nunca pasa de moda. El Porsche 911 combina diseño atemporal, precisión alemana y un
+                        rendimiento excepcional. Su equilibrio entre deportividad y confort lo convierte en uno de los
+                        deportivos más reconocidos del mundo.</p>
+                    <p>Precio: US$300 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+            </article>
+            <article class="producto-destacado">
+                <img class="foto" src="./imagenes/porsche911.webp" alt="foto-porsche911">
+                    <h3>Porsche 911</h3>
+                    <p>Un ícono que nunca pasa de moda. El Porsche 911 combina diseño atemporal, precisión alemana y un
+                        rendimiento excepcional. Su equilibrio entre deportividad y confort lo convierte en uno de los
+                        deportivos más reconocidos del mundo.</p>
+                    <p>Precio: US$300 000</p>
+                    <p class="ver"><a href="./product.html">Ver Más</a></p>
+            </article>
+        </section>
+    </main>
 
-<article>
-<h3>Juan Bautista Noble</h3>
-<p></p>
-</article>
-
-<article>
-<h3>Rafael Muscari</h3>
-<p></p>
-</article>   
-</footer>
+    <footer>
+        <div class="logo-sinnombre"><img src="./imagenes/logo.png" alt="logo"></div>
+        <nav>
+            <ul class="nombres">
+                <li class="nombre-particular">Enrique Miles</li>
+                <li class="nombre-particular">Juan Bautista Noble</li>
+                <li class="nombre-particular">Rafael Muscari</li>
+            </ul>
+        </nav>
+    </footer>
 
 
 </body>
