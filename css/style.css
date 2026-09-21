@@ -187,3 +187,75 @@ footer{
     border-radius: 4px;
     background-color: rgb(231, 230, 230);
 }
+
+.producto-uni{
+display: flex;
+margin: 30px;
+}
+.carrera{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.caracteristicas{
+    margin: 30px;
+    background-color: rgb(215, 215, 215);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.fuente{
+    font-weight:bold ;
+    margin: 5px 0;
+
+}
+
+.margen{
+    margin: 10px 0;
+}
+
+.tag{
+    background-color: rgb(215, 215, 215);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 300px;
+}
+
+.tags{
+    display: flex;
+    justify-content: center;
+}
+
+.deportivo{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.dua{
+    margin: 0 100px;
+}
+
+.resenas {
+   display: flex; 
+   margin-bottom: 30px;
+}
+
+.reseña-titulo{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.usuario{
+    background-color: rgb(215, 215, 215);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px 15px;
+}
+
+.usuario img{
+    width: 200px;
+}
