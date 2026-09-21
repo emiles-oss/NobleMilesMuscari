@@ -52,6 +52,27 @@ body {
     width: 100%;
 }
 
+.main-index{
+    display: flex;
+}
+
+.menu{
+    padding: 30px;
+    border-right: black 2px solid;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin: 5px 0 5px 5px;
+}
+
+.categoria{
+    padding: 10px;
+}
+
+.categoria a{
+    font-weight: 700;
+}
+
 .nuevos-productos{
     margin: 30px 0 15px 0;
     display: flex;
@@ -68,12 +89,12 @@ body {
     margin: 0 10px 0 10px;
     background-color: rgb(215, 215, 215);
     border-radius: 20px;
-    width: 430px;
+    width: 410px;
     padding: 15px;
 }
 
 .foto{
-    width: 400px;
+    width: 380px;
 }
 
 h3{
@@ -101,6 +122,7 @@ h3{
     justify-content: center;
     width: 100%;
     background-color: rgb(215, 215, 215);
+    padding: 20px;
 }
 
 .titulo-destacados{
@@ -114,7 +136,7 @@ h3{
     margin: 30px 10px 15px 10px;
     background-color: white;
     border-radius: 20px;
-    width: 430px;
+    width: 410px;
     padding: 15px;
 }
 
