@@ -67,10 +67,13 @@ body {
 
 .categoria{
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
-
+    
 .categoria a{
     font-weight: 700;
+    color: white;
 }
 
 .nuevos-productos{
