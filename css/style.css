@@ -78,6 +78,7 @@ body {
     padding: 15px;
     background-color: black;
     color: white;
+    margin-right: 50px;
 }
 
 .categoria{
@@ -137,13 +138,10 @@ h3{
 .productos-destacados{
     display: flex;
     justify-content: center;
-    width: 100%;
-    background-color: rgb(215, 215, 215);
     padding: 20px;
 }
 
 .titulo-destacados{
-    background-color: rgb(215, 215, 215);
     padding: 100px 60px 15px;
     font-size: 35px;
     margin-top: 50px;
@@ -153,6 +151,7 @@ h3{
     margin: 30px 10px 15px 10px;
     background-color: white;
     border-radius: 20px;
+    border: 2px solid rgb(215, 215, 215);
     width: 310px;
     padding: 15px;
 }
@@ -206,37 +205,35 @@ footer{
 }
 
 .producto-uni{
-display: flex;
-margin: 30px;
+    display: flex;
+    margin: 50px;
 }
 .carrera{
-    width: 800px;
+    width: 1000px;
     display: flex;
     justify-content: center;
 }
 
 .caracteristicas{
-    margin: 30px;
-    background-color: rgb(215, 215, 215);
+    margin: 50px;
+    border: 2px solid rgb(215, 215, 215);
     border-radius: 20px;
     padding: 20px;
+    width: 1000px;
 }
 
 .fuente{
     font-weight:bold ;
     margin: 5px 0;
+}
 
+.precio{
+    margin: 15px 0;
+    font-size: 20px;
 }
 
 .margen{
     margin: 10px 0;
-}
-
-.tag{
-    background-color: rgb(215, 215, 215);
-    border-radius: 20px;
-    padding: 20px;
-    margin: 0 300px;
 }
 
 .tags{
@@ -248,33 +245,41 @@ margin: 30px;
     display: flex;
     justify-content: center;
     margin-top: 30px;
-
 }
 
 .dua{
     margin: 0 100px;
+    padding: 5px;
+    border: 2px solid rgb(215, 215, 215);
+    border-radius: 5px;
 }
 
-.resenas {
-   display: flex; 
+.resenas { 
    margin-bottom: 30px;
 }
 
-.reseña-titulo{
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
 
 .usuario{
-    background-color: rgb(215, 215, 215);
+    border: solid 2px rgb(215, 215, 215);
     border-radius: 20px;
     padding: 20px;
-    margin: 10px 15px;
+    margin: 10px 35px 10px 15px;
 }
 
 .usuario img{
     width: 200px;
+}
+
+.resultados-busqueda{
+    margin: 50px 30px;
+}
+
+.resultado{
+    margin-right: 15px;
+}
+
+.no-hay{
+    margin: 30px;
 }
 
 @media (max-width:480px) {
@@ -307,6 +312,19 @@ margin: 30px;
 
 .ingresar{
     margin-bottom: 15px;
+}
+
+.caracteristicas{
+    width: 400px;
+}
+
+.carrera{
+    width: 400px;
+}
+
+.deportivo{
+    display: flex;
+    flex-direction: column;
 }
 
 }
