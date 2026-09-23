@@ -13,21 +13,24 @@
         rel="stylesheet">
 </head>
 
-<body class="home">
-    <header class="header">
+<body>
+    <header>
+        <div class="header">
         <div class="logo_buscador">
             <a href="./index.html" class="logo link">
                 <img src="./imagenes/logoconnombre.png" alt="logo">
             </a>
+        <a href="./index.html" class="home">Home</a>
         <form  class="buscador" action="./search-results.html" method="get">
             <input class="input-buscador" type="text" name="buscador" placeholder="Buscar productos..." required>
-            <button type="submit">Buscar</button>
+            <button type="submit" class="buscar">Buscar</button>
         </form>
         </div>
         <div class="login-registro">
             <a href="./login.html">Login</a>
             <span>|</span>
             <a href="./register.html">Registro</a>
+        </div>
         </div>
     </header>
     <section class="foto-auto">
@@ -262,8 +265,6 @@
             </ul>
         </nav>
     </footer>
-
-
 </body>
 
 </html>

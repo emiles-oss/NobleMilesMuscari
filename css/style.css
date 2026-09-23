@@ -26,13 +26,18 @@ body {
     border-bottom: 5px black solid;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 15px 30px;
+    width: 100%;
 }   
 
 .logo img {
     height: 100px;
     width: 100px;
-    margin-right: 30px;
+}
+
+.home{
+    margin: 0 30px;
 }
 
 .logo_buscador{
@@ -40,15 +45,25 @@ body {
     align-items: center;
 }
 
-.buscador{
-    margin-right: 900px;
+
+.input-buscador{
+    border-radius: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    border: 1px black solid;
+    padding: 5px;
+}
+
+.buscar{
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
 }
 
 .login-registro{
    font-size: 18px;
-   display: flex;
-   align-items: end;
-   justify-content: right;
+   justify-self: flex-end;
 }
 
 .foto-auto img{
@@ -60,12 +75,9 @@ body {
 }
 
 .menu{
-    padding: 30px;
-    border-right: black 2px solid;
+    padding: 15px;
     background-color: black;
     color: white;
-    border-radius: 5px;
-    margin: 5px 0 5px 5px;
 }
 
 .categoria{
@@ -83,7 +95,6 @@ body {
     margin: 30px 0 15px 0;
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 .titulo-nuevos{
@@ -92,15 +103,15 @@ body {
 }
 
 .producto{
-    margin: 0 10px 0 10px;
+    margin: 0 5px 0 5px;
     background-color: rgb(215, 215, 215);
     border-radius: 20px;
-    width: 410px;
+    width: 330px;
     padding: 15px;
 }
 
 .foto{
-    width: 380px;
+    width: 300px;
 }
 
 h3{
@@ -264,4 +275,15 @@ margin: 30px;
 
 .usuario img{
     width: 200px;
+}
+
+@media (max-width:480px) {
+    .foto-auto{
+        display: none;
+    }
+.main-index{
+    display: flex;
+    flex-direction: column;
+}
+
 }
