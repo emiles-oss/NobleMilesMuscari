@@ -196,11 +196,12 @@ footer{
 .ingresar{
     font-size: 20px;
     margin-right: 10px;
+    padding: 5px;
 }
 
 .cuenta{
     border: black 1px solid;
-    padding: 2px;
+    padding: 7px;
     border-radius: 4px;
     background-color: rgb(231, 230, 230);
 }
