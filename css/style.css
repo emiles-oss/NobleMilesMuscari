@@ -295,7 +295,7 @@ footer{
 .nuevos-productos{
     display: flex;
     flex-direction: column; 
-    justify-content: center;
+    align-items: center;
      
 
 }
@@ -303,7 +303,7 @@ footer{
 .productos-destacados{
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   align-items: center;
 }
 
 .login-registro{
