@@ -70,6 +70,13 @@ if (idproducto != null) {
         categoria.innerText = data.category;
         categoria.href = "./category.html?categoria=" + data.category;
 
+        let tags = document.querySelector("#product-tags");
+        for (let i = 0; i < data.tags.length; i++) {
+            tags.innerHTML += `
+            <li class="dua">${data.tags[i]}</li>
+        `
+        }
+
         let reviews = document.querySelector("#product-reviews");
         for (let i = 0; i < data.reviews.length; i++) {
             reviews.innerHTML += `
@@ -79,7 +86,7 @@ if (idproducto != null) {
                 <p>${data.reviews[i].comment}</p>
                 <p>${new Date(data.reviews[i].date).toLocaleDateString()}</p>
             </div>
-        `;
+        `
         }
     })
     .catch(function(error) {

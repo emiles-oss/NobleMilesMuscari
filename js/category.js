@@ -17,9 +17,8 @@ formulario.addEventListener('submit', function(e) {
 
 
 let menu = document.querySelector('#lista-menu')
-let url = 'https://dummyjson.com/products/category-list'
 
-fetch(url)  
+fetch('https://dummyjson.com/products/category-list')  
 .then(function (response) {
     return response.json();
   })
@@ -37,3 +36,36 @@ fetch(url)
   .catch(function (error) {
     console.log("Error: " + error);
   })
+
+let productosCategoria = document.querySelector('#productos-categoria');
+let tituloCategoria = document.querySelector('#titulo-categoria');
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let categoria = queryStringObj.get("categoria");
+
+if (categoria !== null) {
+
+    tituloCategoria.innerText = categoria;
+  fetch("https://dummyjson.com/products/category/" + categoria)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      let productos = data.products;
+      productosCategoria.innerHTML = '';
+      for (let i = 0; i < productos.length; i++) {
+        productosCategoria.innerHTML += `
+          <article class="producto">
+            <img class="foto" src="${productos[i].thumbnail}" alt="${productos[i].title}">
+            <h3>${productos[i].title}</h3>
+            <p>${productos[i].description}</p>
+            <p class="precio">$${productos[i].price}</p>
+            <a class="ver" href="./product.html?id=${productos[i].id}">Ver Más</a>
+          </article>
+        `;
+      }
+    })
+    .catch(function (error) {
+      console.log("Error: " + error);
+    });
+}

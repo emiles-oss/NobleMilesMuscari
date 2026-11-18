@@ -84,6 +84,7 @@ body {
 
 .menu-li{
     margin: 10px;
+    text-transform: uppercase;
 }
 
 
@@ -107,6 +108,7 @@ body {
 .titulo-nuevos{
     padding: 100px 60px 15px;
     font-size: 35px; 
+    text-transform: uppercase;
 }
 
 .producto{
@@ -150,6 +152,7 @@ h3{
     padding: 100px 60px 15px;
     font-size: 35px;
     margin-top: 50px;
+    text-transform: uppercase;
 }
 
 .destacado{
@@ -213,6 +216,7 @@ footer{
 
 .producto-uni{
     display: flex;
+    justify-content: center;
     margin: 50px;
 }
 .carrera{
@@ -227,6 +231,10 @@ footer{
     border-radius: 20px;
     padding: 20px;
     width: 1000px;
+}
+
+.caracter{
+    margin: 10px;
 }
 
 .fuente{

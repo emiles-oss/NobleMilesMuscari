@@ -37,7 +37,8 @@ fetch('https://dummyjson.com/products/category-list')
     console.log("Error: " + error);
   })
 
-let productosSmartphones = document.querySelector('#productos-nuevos')
+  let tituloSmartphones = document.querySelector('.titulo-nuevos');
+  let productosSmartphones = document.querySelector('#productos-nuevos')
 fetch('https://dummyjson.com/products/category/smartphones')
   .then(function (response) {
     return response.json();
@@ -45,10 +46,11 @@ fetch('https://dummyjson.com/products/category/smartphones')
   .then(function (data) {
     console.log(data.products);
     let smartphones = data.products
+    tituloSmartphones.innerText = smartphones[0].category;
     for (let i = 0; i < smartphones.length; i++) {
       productosSmartphones.innerHTML += `
             <article class="producto">
-                <img class="foto" src="${smartphones[i].images[0]}" alt="imagen">
+                <img class="foto" src="${smartphones[i].thumbnail}" alt="imagen">
                 <h3>${smartphones[i].title}</h3>
                 <p>${smartphones[i].description}</p>
                 <p class="precio" >${smartphones[i].price}</p>
@@ -61,6 +63,7 @@ fetch('https://dummyjson.com/products/category/smartphones')
     console.log("Error: " + error);
   })
 
+let tituloGroceries = document.querySelector('.titulo-destacados');
 let productosGroceries = document.querySelector('#productos-destacados')
 fetch('https://dummyjson.com/products/category/groceries')
   .then(function (response) {
@@ -69,6 +72,7 @@ fetch('https://dummyjson.com/products/category/groceries')
   .then(function (data) {
     console.log(data.products);
     let groceries = data.products
+    tituloGroceries.innerText = groceries[0].category;
     for (let i = 0; i < groceries.length; i++) {
       productosGroceries.innerHTML += `
             <article class="destacado">
