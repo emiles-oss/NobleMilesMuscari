@@ -69,7 +69,20 @@ if (idproducto != null) {
 
         categoria.innerText = data.category;
         categoria.href = "./category.html?categoria=" + data.category;
+
+        let reviews = document.querySelector("#product-reviews");
+        for (let i = 0; i < data.reviews.length; i++) {
+            reviews.innerHTML += `
+            <div class="usuario">
+                <h3>${data.reviews[i].reviewerName}:</h3>
+                <p>Rating: ${data.reviews[i].rating}/5</p>
+                <p>${data.reviews[i].comment}</p>
+                <p>${new Date(data.reviews[i].date).toLocaleDateString()}</p>
+            </div>
+        `;
+        }
     })
     .catch(function(error) {
         console.log("El error es: " + error);
-    });
+    })
+}
