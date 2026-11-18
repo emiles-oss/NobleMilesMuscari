@@ -36,3 +36,40 @@ fetch('https://dummyjson.com/products/category-list')
         console.log("Error: " + error);
     })
 
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let idproducto = queryStringObj.get("id");
+
+if (idproducto != null) {
+
+    fetch("https://dummyjson.com/products/" + idproducto)
+      .then(function(response) {
+            return response.json();
+    })
+    .then(function(data) {
+
+        document.querySelector("#product-image").src = data.thumbnail;
+        document.querySelector("#product-image").alt = data.title;
+
+        document.querySelector("#product-title").innerText = data.title;
+
+        document.querySelector("#product-brand").innerText =
+            data.brand ? data.brand : "Sin marca";
+
+        document.querySelector("#product-description").innerText =
+            data.description;
+
+        document.querySelector("#product-price").innerText =
+            "$ " + data.price;
+
+        document.querySelector("#product-stock").innerText =
+            "Stock: " + data.stock;
+        
+        let categoria = document.querySelector("#product-category");
+
+        categoria.innerText = data.category;
+        categoria.href = "./category.html?categoria=" + data.category;
+    })
+    .catch(function(error) {
+        console.log("El error es: " + error);
+    });
