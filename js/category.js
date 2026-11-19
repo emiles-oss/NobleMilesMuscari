@@ -56,7 +56,7 @@ if (categoria !== null) {
       for (let i = 0; i < productos.length; i++) {
         productosCategoria.innerHTML += `
           <article class="producto">
-            <img class="foto" src="${productos[i].thumbnail}" alt="${productos[i].title}">
+            <img class="foto" src="${productos[i].images[0]}" alt="${productos[i].title}">
             <h3>${productos[i].title}</h3>
             <p>${productos[i].description}</p>
             <p class="precio">$${productos[i].price}</p>

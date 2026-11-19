@@ -50,7 +50,7 @@ fetch('https://dummyjson.com/products/category/smartphones')
     for (let i = 0; i < smartphones.length; i++) {
       productosSmartphones.innerHTML += `
             <article class="producto">
-                <img class="foto" src="${smartphones[i].thumbnail}" alt="imagen">
+                <img class="foto" src="${smartphones[i].images[0]}" alt="imagen">
                 <h3>${smartphones[i].title}</h3>
                 <p>${smartphones[i].description}</p>
                 <p class="precio" >${smartphones[i].price}</p>

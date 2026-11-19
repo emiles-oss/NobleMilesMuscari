@@ -48,7 +48,7 @@ if (idproducto != null) {
     })
     .then(function(data) {
 
-        document.querySelector("#product-image").src = data.thumbnail;
+        document.querySelector("#product-image").src = data.images[0];
         document.querySelector("#product-image").alt = data.title;
 
         document.querySelector("#product-title").innerText = data.title;

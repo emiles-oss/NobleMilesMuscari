@@ -43,12 +43,14 @@ let tituloBusqueda = document.querySelector('#titulo-busqueda')
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let busqueda = queryStringObj.get("buscador"); 
+console.log("Término extraído de la URL:", busqueda);
 
-fetch('https://dummyjson.com/products/search?q=${buscador}')
+fetch(`https://dummyjson.com/products/search?q=${busqueda}`)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
+        console.log("Respuesta completa de DummyJSON: ", data);
       let productos = data.products;
       if (productos.length == 0) {
         tituloBusqueda.innerText = 'No hay resultados para el término: ' + busqueda;
@@ -57,7 +59,7 @@ fetch('https://dummyjson.com/products/search?q=${buscador}')
         for (let i = 0; i < productos.length; i++) {
           contenedorResultados.innerHTML += `
             <article class="producto">
-              <img class="foto" src="${productos[i].thumbnail}" alt="${productos[i].title}">
+              <img class="foto" src="${productos[i].images[0]}" alt="${productos[i].title}">
               <h3>${productos[i].title}</h3>
               <p>${productos[i].description}</p>
               <p class="precio">$${productos[i].price}</p>
