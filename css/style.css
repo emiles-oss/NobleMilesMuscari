@@ -217,8 +217,10 @@ footer{
 .producto-uni{
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin: 30px;
+    height: 400px;
 }
+
 .carrera{
     width: 1000px;
     display: flex;
