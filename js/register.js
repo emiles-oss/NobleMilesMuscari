@@ -11,9 +11,7 @@ formulario.addEventListener('submit', function (e) {
     }
 });
 let menu = document.querySelector('#lista-menu');
-let url = 'https://dummyjson.com/products/category-list';
-
-fetch(url)
+fetch('https://dummyjson.com/products/category-list')
     .then(function (response) {
         return response.json();
     })
