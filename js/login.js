@@ -1,5 +1,5 @@
 let formulario = document.querySelector('.buscador');
-let buscador = document.querySelector('input');
+let buscador = document.querySelector('.buscador input');
 
 formulario.addEventListener('submit', function(e) {
 
@@ -34,3 +34,31 @@ fetch(url)
         `
     }
   })
+
+let formLogin = document.querySelector('#form-login');
+let inputEmail = document.querySelector('#email');
+let inputPassword = document.querySelector('#contraseña');
+let mensajeError = document.querySelector('#mensaje-error');
+
+formLogin.addEventListener('submit', function (e) {
+    e.preventDefault();
+    mensajeError.innerText = '';
+
+    if (inputEmail.value.trim() === '') {
+        mensajeError.innerText = 'El campo email es obligatorio';
+        return;
+    }
+
+    if (inputPassword.value.trim() === '') {
+        mensajeError.innerText = 'El campo contraseña es obligatorio';
+        return;
+    }
+
+    if (inputPassword.value.length < 6) {
+        mensajeError.innerText = 'La contraseña debe tener al menos 6 caracteres';
+        return;
+    }
+
+    localStorage.setItem('email', inputEmail.value.trim());
+    window.location.href = './index.html';
+});
