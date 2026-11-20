@@ -1,5 +1,4 @@
 let emailGuardado = localStorage.getItem('email');
-
 let saludo = document.querySelector('#saludo');
 let linkLogoutSaludo = document.querySelector('#link-logout');
 let menuLogin = document.querySelector('#menu-login');

@@ -16,7 +16,7 @@ formulario.addEventListener('submit', function(e) {
 });
 
 
-let menu = document.querySelector('#lista-menu')
+let menu = document.querySelector('#lista-menu');
 fetch('https://dummyjson.com/products/category-list')  
 .then(function (response) {
     return response.json();

@@ -16,7 +16,7 @@ formulario.addEventListener('submit', function (e) {
 });
 
 
-let menu = document.querySelector('#lista-menu')
+let menu = document.querySelector('#lista-menu');
 fetch('https://dummyjson.com/products/category-list')
     .then(function (response) {
         return response.json();
@@ -53,24 +53,26 @@ if (idproducto != null) {
 
         document.querySelector("#product-title").innerText = data.title;
 
-        document.querySelector("#product-brand").innerText =
-            data.brand ? data.brand : "Sin marca";
+        if(data.brand){
+            document.querySelector("#product-brand").innerText = data.brand;   
+        }
+        else {
+            document.querySelector("#product-brand").innerText = "Sin Marca";
+        }
+        document.querySelector("#product-brand").innerText = data.brand ? data.brand : "Sin marca";
 
-        document.querySelector("#product-description").innerText =
-            data.description;
+        document.querySelector("#product-description").innerText = data.description;
 
-        document.querySelector("#product-price").innerText =
-            "$ " + data.price;
+        document.querySelector("#product-price").innerText = "$ " + data.price;
 
-        document.querySelector("#product-stock").innerText =
-            "Stock: " + data.stock;
+        document.querySelector("#product-stock").innerText = "Stock: " + data.stock;
         
         let categoria = document.querySelector("#product-category");
-
+        let tags = document.querySelector("#product-tags");
+        
         categoria.innerText = data.category;
         categoria.href = "./category.html?categoria=" + data.category;
-
-        let tags = document.querySelector("#product-tags");
+    
         for (let i = 0; i < data.tags.length; i++) {
             tags.innerHTML += `
             <li class="dua">${data.tags[i]}</li>
