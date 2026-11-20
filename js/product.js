@@ -80,8 +80,9 @@ if (idproducto != null) {
         }
 
         let reviews = document.querySelector("#product-reviews");
+        let rvws = "";
         for (let i = 0; i < data.reviews.length; i++) {
-            reviews.innerHTML += `
+            rvws += `
             <div class="usuario">
                 <h3>${data.reviews[i].reviewerName}:</h3>
                 <p>Rating: ${data.reviews[i].rating}/5</p>
@@ -90,6 +91,7 @@ if (idproducto != null) {
             </div>
         `
         }
+        reviews.innerHTML = rvws
     })
     .catch(function(error) {
         console.log("El error es: " + error);

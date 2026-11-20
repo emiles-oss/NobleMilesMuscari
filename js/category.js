@@ -52,9 +52,9 @@ if (categoria !== null) {
     })
     .then(function (data) {
       let productos = data.products;
-      productosCategoria.innerHTML = '';
+      let productosC = "";
       for (let i = 0; i < productos.length; i++) {
-        productosCategoria.innerHTML += `
+        productosC += `
           <article class="producto">
             <img class="foto" src="${productos[i].images[0]}" alt="${productos[i].title}">
             <h3>${productos[i].title}</h3>
@@ -64,6 +64,7 @@ if (categoria !== null) {
           </article>
         `;
       }
+      productosCategoria.innerHTML = productosC
     })
     .catch(function (error) {
       console.log("Error: " + error);

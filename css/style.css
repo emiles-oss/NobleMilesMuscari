@@ -82,6 +82,13 @@ body {
     border-right: #444 solid 2px;
 }
 
+.menu-login-register{
+    padding: 15px;
+    padding-right: 50px;
+    margin-right: 50px;
+    border-right: #444 solid 2px;
+}
+
 .menu-li{
     margin: 10px;
     text-transform: uppercase;
@@ -350,5 +357,14 @@ footer{
 
 .menu {
     width: 100%;
+}
+
+.menu-login-register{
+    display: none;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
 }
 }
